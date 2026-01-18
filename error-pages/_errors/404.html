@@ -1,0 +1,43 @@
+﻿<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Error 404</title>
+  <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+  <main class="page">
+    <div class="brand">Estado del servicio</div>
+    <section class="card" role="alert">
+      <header class="header">
+        <svg class="icon" viewBox="0 0 48 48" aria-hidden="true"><circle cx="21" cy="21" r="12" fill="none" stroke="currentColor" stroke-width="2"/><path d="M29 29l10 10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <h1 class="title">Error 404</h1>
+        <p class="subtitle">No encontramos la pagina.</p>
+      </header>
+
+      <p class="body">La ruta solicitada no existe o fue movida. Podes volver al inicio o probar otra direccion.</p>
+
+      <div>
+        <p class="body">Que podes hacer:</p>
+        <ul class="list">
+          <li>Revisar la ortografia de la URL.</li>
+          <li>Volver al inicio y navegar desde ahi.</li>
+          <li>Reintentar mas tarde si era un recurso temporal.</li>
+        </ul>
+      </div>
+
+      <div class="actions">
+        <a class="button-link primary" href="/" aria-label="Volver al inicio">Volver al inicio</a>
+        <button class="button" type="button" onclick="location.reload()" aria-label="Reintentar">Reintentar</button>
+      </div>
+
+      <footer class="footer">
+        <div>Request ID: <span id="requestId">.</span></div>
+        <div>Hora: <span id="timestamp">.</span></div>
+      </footer>
+    </section>
+  </main>
+  <script src="/assets/app.js"></script>
+</body>
+</html>

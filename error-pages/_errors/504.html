@@ -1,0 +1,43 @@
+﻿<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Error 504</title>
+  <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+  <main class="page">
+    <div class="brand">Estado del servicio</div>
+    <section class="card" role="alert">
+      <header class="header">
+        <svg class="icon" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="16" fill="none" stroke="currentColor" stroke-width="2"/><path d="M24 14v10l6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <h1 class="title">Error 504</h1>
+        <p class="subtitle">El servidor no respondio a tiempo.</p>
+      </header>
+
+      <p class="body">Se agoto el tiempo de espera al comunicarnos con un servicio interno.</p>
+
+      <div>
+        <p class="body">Que podes hacer:</p>
+        <ul class="list">
+          <li>Reintentar en unos minutos.</li>
+          <li>Actualizar la pagina.</li>
+          <li>Volver al inicio y probar otra seccion.</li>
+        </ul>
+      </div>
+
+      <div class="actions">
+        <a class="button-link primary" href="/" aria-label="Volver al inicio">Volver al inicio</a>
+        <button class="button" type="button" onclick="location.reload()" aria-label="Reintentar">Reintentar</button>
+      </div>
+
+      <footer class="footer">
+        <div>Request ID: <span id="requestId">.</span></div>
+        <div>Hora: <span id="timestamp">.</span></div>
+      </footer>
+    </section>
+  </main>
+  <script src="/assets/app.js"></script>
+</body>
+</html>
