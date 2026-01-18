@@ -18,4 +18,11 @@
       tsEl.textContent = new Date().toString();
     }
   }
+
+  document.addEventListener("DOMContentLoaded", function() {
+    var card = document.querySelector(".card");
+    if (card) {
+      card.classList.add("card-enter");
+    }
+  });
 })();
